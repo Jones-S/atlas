@@ -1,0 +1,52 @@
+# Author: Jonas Scheiwiller
+# Date: 17-11-2015
+# References:
+# - https://de.wikipedia.org/wiki/Local_Area_Network
+
+definition:
+  name: Local Area Network (LAN)
+  nodes:
+    - Servers
+    - Computers
+    - Electronic Devices
+  edges: Wires or Radio Signals (WiFi)
+  mediums: Data-Packages
+
+attributes:
+  topology: centralized
+  scale: local
+  kind: artificial
+  origin: evolved
+  visibility: invisible/visible
+  usage: communication
+  arrangement: dynamic
+  perception: separately
+  stability: durable
+  reactivity: adaptive
+
+meta:
+  image: LAN.jpg
+  abstract: A local area network consists of servers, computers and eletronic devices which are interconnected. They serve the purpose to communicate and share data between the connected devices. Cables and Radio Signals (WiFi) are the most common connections used in this network.
+
+graph:
+  nodes:
+    c1: computer
+    c2: computer
+    c3: computer
+    c4: computer
+    c5: computer
+    c6: computer
+    c7: computer
+    s1: server
+    m1: mobile device
+    m2: mobile device
+    m3: mobile device
+    m4: mobile device
+    e1: other device
+    e2: other device
+
+
+  edges:
+    - c1:s1 c2:s1 c3:s1 c4:s1 c5:s1 c6:s1 c7:s1
+    - m1:s1 m2:s1 m3:s1 m4:s1
+    - e1:s1 e2:s1
