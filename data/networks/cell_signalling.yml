@@ -20,7 +20,7 @@ attributes:
   visibility: invisible (too small)
   usage: communication
   arrangement: dynamic
-  perception: ?
+  perception: singly
   stability: durable
   reactivity: adaptive
 
