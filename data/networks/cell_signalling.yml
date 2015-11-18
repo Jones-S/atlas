@@ -1,0 +1,44 @@
+# Author: Jonas Scheiwiller
+# Date: 17-11-2015
+# References:
+# - http://www.doc.ic.ac.uk/~natasha/341_Lectures_2-3_notes.pdf
+
+definition:
+  name: Cell Signalling Network
+  nodes:
+    - Cell components
+    - Receptors
+    - Transcription Factors
+  edges: Signalling Pathways
+  mediums: Proteins
+
+attributes:
+  topology: decentralized
+  scale: local
+  kind: natural
+  origin: evolved
+  visibility: invisible (too small)
+  usage: communication
+  arrangement: dynamic
+  perception: ?
+  stability: durable
+  reactivity: adaptive
+
+meta:
+  image: cell_signalling_network.jpg
+  abstract: Cell signalling network control a great deal of cell processes including transcription and translation of proteins to guarantee a viable and working cell. Proteins are the main components in transferring signals between all kind of different signals.
+
+graph:
+  nodes:
+    p1: Protein
+    r1: Receptor
+    p3: Protein
+    p4: Protein
+    p5: Protein
+    m1: Nuclear Membrane Receptor
+    t1: Trancription Factor
+
+  edges:
+    - p1:r1
+    - r1:p3 p3:p4 p4:p5
+    - p5:m1 m1:t1
