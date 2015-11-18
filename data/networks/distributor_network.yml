@@ -1,0 +1,46 @@
+# Author: Jonas Scheiwiller
+# Date: 17-11-2015
+# References:
+
+definition:
+  name: Retail Distributor Network
+  nodes:
+    - Brand Owner/Producer
+    - Distributors
+    - Retail Stores
+    - Buyer
+  edges: Delivery Services
+  mediums: Vans or other Transportation Vehicles
+
+attributes:
+  topology: decentralized
+  scale: global
+  kind: artificial
+  origin: evolved
+  visibility: visible
+  usage: communication
+  arrangement: dynamic
+  perception: separately
+  stability: durable
+  reactivity: adaptive
+
+meta:
+  image: highway.jpg
+  abstract: From producers products are delivered via a variable number of intermediate distributors to other producers or end users. A distributor network scale can vary from very local to global and uses all different types of transportation vehicles.
+
+graph:
+  nodes:
+    p1: producer
+    d1: distributor
+    d2: distributor
+    d3: distributor
+    d4: distributor
+    d5: distributor
+    d6: distributor
+    p2: secondary producer
+    e1: end user
+
+  edges:
+    - p1:d1
+    - d1:d2 d2:d3 d3:d4 d3:d5
+    - d4:e1 d5:p2
